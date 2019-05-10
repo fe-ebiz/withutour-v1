@@ -101,21 +101,23 @@ figure img, .img-list img {position: relative; box-sizing: border-box; width: 10
 .visual .btn-ft.type-2 {width: 140px}
 .visual .btn-ft.type-2 .ic-rArrow:after {top: 0; right: -2px; border-color: #fff;}
 /* group */
-.group {position: relative; margin-top: 50px; padding: 22px 0px 20px; background: #fff; height: 440px;}
-.group .group-container {position: absolute; height: 400px; opacity: 0; visibility: hidden;}
-.group .group-container.on {opacity: 1; visibility: visible;}
-/* .group .group-container {opacity: 0;}
-.group .group-container.on {opacity: 1;} */
-.group .group-list {position: relative; margin: 0 auto; height: 380px; box-sizing: border-box;}
+.group {position: relative; margin-top: 50px; padding: 22px 0px 20px; background: #fff;}
+/* swiper 영역 */
+.group .group-container {display: none;}
+.group .group-container.off {display: none;}
+.group .group-container.on {display: block;}
+.group .swiper-container.group-container {height: 400px;}
+.group .group-container {position: relative; margin: 0 auto; box-sizing: border-box;}
 .group .group-list .link-area {cursor: pointer;}
 /* swiper 재수정 */
-.group .group-container.swiper-container {z-index: 0;}
-.group .group-list.swiper-slide {width: 85%;}
+.group .swiper-container.group-container {z-index: 0;}
+.group .swiper-slide.group-list {width: 85%;}
 .group .page-container {position: absolute; bottom: 0; left: 0; width: 100%; text-align: center;} 
 .group .page-container .swiper-pagination {display: inline-block; position: relative; bottom: auto; left: auto; width: auto; box-sizing: border-box; padding: 0 15px; border-radius: 10px; background: #6e6e6e; color: #fff; line-height: 20px; font-size: 13px; font-family: "Nanum Gothic", sans-serif;}
-/* .group .swiper-pagination-bullets {bottom: 0; left: 0;} */
-/* .group .swiper-pagination-bullet {position: absolute; bottom: 0; left: 0; width: 85%; text-align: center;} */
-/* .group .swiper-pagination-bullet .swiper-pagination {display: inline-block; position: relative; bottom: auto; left: auto; width: auto; box-sizing: border-box; padding: 0 15px; border-radius: 10px; background: #6e6e6e; color: #fff; line-height: 20px; font-size: 12px;} */
+
+.group .group-container.region {padding-left: 20px; padding-right: 20px;}
+.group .group-container.region .group-list {margin-top: 15px;}
+.group .group-container.region .group-list:first-child {margin-top: 0;}
 /* 타이틀 영역 */
 .group .group-list .tit-area {position: relative; box-sizing: border-box; width: 100%;}
 .group .group-list .tit-area .type-box {position: relative; box-sizing: border-box; width: 100%; height: 34px;}
