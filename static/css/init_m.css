@@ -2,7 +2,7 @@
 @import url(http://nurifunding.co.kr/static/fonts/nanumgothic/nanumgothic.css);
 @import url(http://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css);
 
-body, html, * {font-family: 'Nanum Square', 'Nanum Gothic', 'Malgun Gothic', sans-serif; color: #434343; letter-spacing: -0.5px;}
+body {font-family: 'Nanum Square', 'Nanum Gothic', 'Malgun Gothic', sans-serif; color: #434343; letter-spacing: -0.5px;}
 
 .show-xs {display: none !important;}
 @media (max-width: 768px) {
@@ -39,21 +39,21 @@ figure img, .img-list img {position: relative; box-sizing: border-box; width: 10
 /* 190109 입점문의 추가 */
 .header .cust-txt {position: absolute; /*min-width: 90px;*/ width: 26%; top: 11px; right: 10px;}
 
-.header .nav {z-index: 99; position: absolute; box-sizing: border-box; width: 100%; height: 50px; width: 100%; left: 0; margin-top: -1px; padding-left: 6px; background: #4a1e53;}
-.header .nav .container {height: 100%;}
-.header .nav .nav-list-box {float: left; position: relative; overflow: hidden; overflow-x: auto; box-sizing: border-box; width: 88%; height: 100%; padding-left: 8px; white-space: nowrap;}
+.header .nav {z-index: 99; position: absolute; box-sizing: border-box; width: 100%; height: 50px; width: 100%; left: 0; margin-top: -1px; background: #4a1e53;}
+.header .nav .nav-container {position: relative; height: 100%;}
+.header .nav .nav-list-box {float: left; position: relative; overflow: hidden; overflow-x: auto; box-sizing: border-box; width: 88%; height: 100%; padding-left: 0px; white-space: nowrap;}
 .header .nav .nav-list {position: relative; display: inline-block;}
-.header .nav .nav-list li {display: inline-block; padding-right: 14px;}
-.header .nav .nav-list li a {display: block; font-size: 17px; line-height: 50px; letter-spacing: -0.75px; color: #fff;}
-.header .nav .nav-list li.on a {position: relative; font-weight: 700; color: #ffde00;}
-.header .nav .nav-list li.on a:before {content: ''; isplay: block; position: absolute; bottom: 0; left: 0; width: 100%; height: 4px; background: #ffde00;}
+.header .nav .nav-list li {display: inline-block;}
+.header .nav .nav-list li a {display: block; padding: 0 10px; font-size: 17px; line-height: 40px; letter-spacing: -0.75px; color: #fff;}
+.header .nav .nav-list li.on a {position: relative; background: #fff; font-weight: 700; color: #4a1e53; border-top: 10px solid #4a1e53;}
 /* + 버튼 */
-.header .nav .btn-menu {float: left; display: block; position: relative; box-sizing: border-box; width: 12%; height: 100%; border-left: 1px solid #baa3bf; background: #000000}
-.header .nav .btn-menu:before {content: ''; display: block; position: absolute; width: 6px; height: 100%; top: 0; left: -7px; background: #4a1e53;}
+.header .nav .btn-menu {float: left; display: table; position: relative; box-sizing: border-box; width: 12%; height: 100%; border-left: 1px solid #baa3bf; background: #000000;}
+.header .nav .btn-menu .cell {display: table-cell; vertical-align: middle; text-align: center; font-size: 14px; color: #fff; line-height: 1.2;}
+/* .header .nav .btn-menu:before {content: ''; display: block; position: absolute; width: 6px; height: 100%; top: 0; left: -7px; background: #4a1e53;}
 .header .nav .btn-menu .a-i-x {width: 18px; height: 18px; top: 50%; left: 50%; margin-top: -9px; margin-left: -7px;}
 .header .nav .btn-menu .a-i-x:before, .header .nav .btn-menu .a-i-x:after {background: #fff; -webkit-transform: rotate(0); -ms-transform: rotate(0); -o-transform: rotate(0); transform: rotate(0);}
 .header .nav .btn-menu .a-i-x:before {left: 50%; margin-left: -1px; width: 3px; height: 18px;}
-.header .nav .btn-menu .a-i-x:after {top: 50%; margin-top: -2px; width: 18px; height: 3px;}
+.header .nav .btn-menu .a-i-x:after {top: 50%; margin-top: -2px; width: 18px; height: 3px;} */
 
 /* menu - popup */
 .header .menu {z-index: 999; position: fixed; display: none; box-sizing: border-box; width: 100%; height: 100%; top: 0; left: 0; background: rgba(0, 0, 0, 0.3);}
@@ -62,7 +62,7 @@ figure img, .img-list img {position: relative; box-sizing: border-box; width: 10
 .header .menu .container {height: 100%;}
 .header .menu .menu-wrap {position: relative; box-sizing: border-box; width: 100%; height: 100%; /*padding-bottom: 17px; */background: #f5f5f5;}
 .header .menu .menu-tit-area {position: relative; box-sizing: border-box; padding: 11px 40px 10px; text-align: center; border-bottom: 1px solid #aaa; background: #fff;}
-.header .menu .menu-tit-area .menu-tit {font-size: 17px; font-weight: 700; line-height: 22px; color: #9a2bab;}
+.header .menu .menu-tit-area .menu-tit {font-size: 16px; font-weight: 700; line-height: 22px; color: #9a2bab;}
 
 .header .menu .menu-txt-area {display: block; position: relative; overflow: hidden; box-sizing: border-box; width: 100%; padding: 17px 24px 12px;}
 .header .menu .menu-txt-area .menu-txt-box {padding-bottom: 12px;}
@@ -101,9 +101,21 @@ figure img, .img-list img {position: relative; box-sizing: border-box; width: 10
 .visual .btn-ft.type-2 {width: 140px}
 .visual .btn-ft.type-2 .ic-rArrow:after {top: 0; right: -2px; border-color: #fff;}
 /* group */
-.group {margin-top: 50px; padding: 22px 20px 20px; background: #fff;}
-.group .group-list {display: none; position: relative; box-sizing: border-box; width: 100%; margin: 0 auto;}
+.group {position: relative; margin-top: 50px; padding: 22px 0px 20px; background: #fff; height: 440px;}
+.group .group-container {position: absolute; height: 400px; opacity: 0; visibility: hidden;}
+.group .group-container.on {opacity: 1; visibility: visible;}
+/* .group .group-container {opacity: 0;}
+.group .group-container.on {opacity: 1;} */
+.group .group-list {position: relative; margin: 0 auto; height: 380px; box-sizing: border-box;}
 .group .group-list .link-area {cursor: pointer;}
+/* swiper 재수정 */
+.group .group-container.swiper-container {z-index: 0;}
+.group .group-list.swiper-slide {width: 85%;}
+.group .page-container {position: absolute; bottom: 0; left: 0; width: 100%; text-align: center;} 
+.group .page-container .swiper-pagination {display: inline-block; position: relative; bottom: auto; left: auto; width: auto; box-sizing: border-box; padding: 0 15px; border-radius: 10px; background: #6e6e6e; color: #fff; line-height: 20px; font-size: 13px; font-family: "Nanum Gothic", sans-serif;}
+/* .group .swiper-pagination-bullets {bottom: 0; left: 0;} */
+/* .group .swiper-pagination-bullet {position: absolute; bottom: 0; left: 0; width: 85%; text-align: center;} */
+/* .group .swiper-pagination-bullet .swiper-pagination {display: inline-block; position: relative; bottom: auto; left: auto; width: auto; box-sizing: border-box; padding: 0 15px; border-radius: 10px; background: #6e6e6e; color: #fff; line-height: 20px; font-size: 12px;} */
 /* 타이틀 영역 */
 .group .group-list .tit-area {position: relative; box-sizing: border-box; width: 100%;}
 .group .group-list .tit-area .type-box {position: relative; box-sizing: border-box; width: 100%; height: 34px;}
@@ -112,7 +124,7 @@ figure img, .img-list img {position: relative; box-sizing: border-box; width: 10
 .group .group-list .tit-area .type-box .type-stay {position: absolute; width: 39.5%; top: 0; right: 0; padding-right: 12px; font-size: 16px; text-align: right; background: #000;}
 .group .group-list .tit-area .type-box .type-stay:before {content: ''; display: block; position: absolute; width: 0px; height: 0px; top: 0; margin-left: -34px; border-left: 34px solid transparent; border-bottom: 34px solid #000;}
 .group .group-list .tit-area .tit-box {text-align: center;}
-.group .group-list .tit-area .tit-box .tit {padding: 13px 0 3px; display: block; font-size: 34px; font-weight: 700; line-height: 34px; letter-spacing: -1px;}
+.group .group-list .tit-area .tit-box .tit {padding: 13px 0 3px; display: block; font-size: 30px; font-weight: 700; line-height: 34px; letter-spacing: -1px;}
 .group .group-list .tit-area .tit-box .sub-tit {display: block; font-size: 20px; line-height: 30px; letter-spacing: -1px;}
 /* 소개텍스트 영역 */
 .group .group-list .txt-area {}

@@ -72,7 +72,7 @@ function menuFn(){
             }
             if ( (targetTop-plusH) <= scltop ) {
                 //nav.removeClass('on');
-                nav.find('a[href="'+secId+'"]').parents('li').addClass('on').siblings().removeClass("on");;
+                nav.find('a[href="'+secId+'"]').parents('li').addClass('on').siblings().removeClass("on");
             }
 
         });
