@@ -10,7 +10,7 @@ $(function(){
     });
     
     /* 디자인변경되면 제거 */
-    if( $('."group-list').parents().hasClass('cont-group') ){
+    if( $('.group-list').parents().hasClass('cont-group') ){
             
     }else{
         //ie8에서 group list 정렬을 위해 js 추가
@@ -88,26 +88,23 @@ function menuFn(){
 
 
 function tListFn(){
-    $(document).ready(function(){
-        var groupLen = $('.group-list').length;
-        var list, listLen, listH, listMaxH;
+    var groupLen = $('.group-list').length;
+    var list, listLen, listH, listMaxH;
+    
+    for( var i = 0 ; i < groupLen ; i++ ){
+        list = $('.group-list:eq('+ i +')').find('.txt-list-box');
+        listLen = list.length;
+        listH, listMaxH = 0;
         
-        for( var i = 0 ; i < groupLen ; i++ ){
-            list = $('.group-list:eq('+ i +')').find('.txt-list-box');
-            listLen = list.length;
-            listH, listMaxH = 0;
-            
-            for( var j = 0 ; j < listLen ; j++ ){
-                listH = $('.group-list:eq('+ i +')').find('.txt-list-box:eq('+ j +')').find('.txt-list').innerHeight();
-                if( listMaxH < listH ) listMaxH = listH;
-                //console.log(i, j, listH)
-            }
-            
-            list.find('.txt-list').css({'height' : listMaxH+'px'});
-            //console.log('end : ', i, listMaxH)
+        for( var j = 0 ; j < listLen ; j++ ){
+            listH = $('.group-list:eq('+ i +')').find('.txt-list-box:eq('+ j +')').find('.txt-list').innerHeight();
+            if( listMaxH < listH ) listMaxH = listH;
+            //console.log(i, j, listH)
         }
         
-    });
+        list.find('.txt-list').css({'height' : listMaxH+'px'});
+        //console.log('end : ', i, listMaxH)
+    }
 }
 
 // 팝업 인터렉션 
@@ -131,16 +128,20 @@ function popFn(){
         groupArr = btnPt.split(' ');
         //console.log(groupArr[2]);
 
-        pop.show();
-        pop.find('.pop-list.'+groupArr[2]).show();
+        // console.log('hi');
+        if (groupArr[2] !== 'bscondo') {
+            pop.show();
+            pop.find('.pop-list.'+groupArr[2]).show();
 
 
-        $('html').css({'overflow': 'hidden', 'height': '100%'});
-        $(pop).on('scroll', function(event) { 
-            event.preventDefault();     
-            event.stopPropagation();     
-            return false; 
-        });
+            $('html').css({'overflow': 'hidden', 'height': '100%'});
+            $(pop).on('scroll', function(event) { 
+                event.preventDefault();     
+                event.stopPropagation();     
+                return false; 
+            });
+        }
+
     });
     
     //close popup
