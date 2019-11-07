@@ -14,16 +14,18 @@
     <link rel="stylesheet" href="http://static.ocean2you.co.kr/css/jquery-ui.css">
 
     <!-- 190510 swiper -->
-    <!-- <link rel="stylesheet" href="http://static.withutour.co.kr/css/init_m_v1.0.2.css"> -->
-    <link rel="stylesheet" href="../static/css/init_m_v1.0.2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="http://static.withutour.co.kr/css/init_m_v1.0.1.css">
+    <!-- <link rel="stylesheet" href="../static/css/init_m_v1.0.1.css"> -->
 
     <!-- js -->
     <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
 
     <!-- 190510 swiper     -->
-    <!-- <script src="http://static.withutour.co.kr/js/m/init_v1.0.2.js"></script> -->
-    <script src="../static/js/m/init_v1.0.2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="http://static.withutour.co.kr/js/m/init.js"></script>
+    <!-- <script src="../static/js/m/init.js"></script> -->
 
     <!-- <script type="text/javascript" src="http://localhost:35729/livereload.js"></script> -->
 </head>
@@ -37,17 +39,19 @@
 
         <!-- header -->
         <header class="header">
+            <!-- 181219 header 수정 -->
             <h1 class="logo"><img src="http://img.withutour.co.kr/logo.png" alt="위드유투어 로고"></h1>
             <!-- 190109 입점문의 추가 -->
             <a href="tel:010-3066-4665" class="cust-txt"><img src="http://img.withutour.co.kr/m/btn_contact.png"
                     alt="입점문의 010-3066-4665"></a>
 
             <!-- menu -->
+            <!-- 190510 -->
             <nav class="nav" id="g-nav">
                 <div class="nav-container">
                     <div class="nav-list-box clr">
                         <ul class="nav-list">
-                            <li class="item on"><a href="#gangwon">홈</a></li>
+                            <li class="item on"><a href="#home">홈</a></li>
                             <li class="item"><a href="#seoulgg">서울</a></li>
                             <li class="item"><a href="#gangwon">강원</a></li>
                             <li class="item"><a href="#gyeongsang">경상</a></li>
@@ -234,12 +238,13 @@
                 </div>
             </section>
 
+            <!-- 190510 -->
             <section class="group">
                 <div class="container clr">
 
-                    <div class="cf group-container on" id="home">
-                        <div class="group-list-wrapper cf">
-                            <div id="ramada" class="group-list hotel ramada">
+                    <div class="group-container swiper-container group-swiper on" id="home">
+                        <div class="swiper-wrapper">
+                            <div id="ramada" class="swiper-slide group-list hotel ramada">
                                 <div class="link-area" onclick="window.open('http://m.ramadapt.co.kr/group/')" 
                                     title="라마다앙코르평택호텔 단체문의 페이지 이동">
                                     <div class="tit-area">
@@ -261,7 +266,7 @@
                                 </div>
                             </div>
                             <!--//.ramada-->
-                            <div id="ocean" class="group-list resort ocean">
+                            <div id="ocean" class="swiper-slide group-list resort ocean">
                                 <div class="link-area" onclick="window.open('http://ocean2you.co.kr/group/')"
                                     title="오션투유리조트 단체문의 페이지 이동">
                                     <div class="tit-area">
@@ -282,8 +287,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--//.ocean-->
-                            <div id="value" class="group-list hotel value">
+                            <!-- 190611 위치 변경 -->
+                            <!-- 190611 강릉씨베이호텔 추가 -->
+                            <div id="value" class="swiper-slide group-list hotel value">
                                 <div class="link-area" onclick="window.open('http://www.valuehotelgangneung.com')" 
                                     title="강릉씨베이호텔 페이지 이동">
                                     <div class="tit-area">
@@ -305,7 +311,8 @@
                                 </div>
                             </div>
                             <!--//.value-->
-                            <div id="chiak" class="group-list resort chiak">
+                            <!--//.ocean-->
+                            <div id="chiak" class="swiper-slide group-list resort chiak">
                                 <div class="link-area" onclick="window.open('http://m.koresco-chiak.co.kr/group/')"
                                     title="코레스코 치악 콘도 단체문의 페이지 이동">
                                     <div class="tit-area">
@@ -327,7 +334,7 @@
                                 </div>
                             </div>
                             <!--//.chiak-->
-                            <div id="eonho" class="group-list resort eonho">
+                            <div id="eonho" class="swiper-slide group-list resort eonho">
                                 <div class="link-area" onclick="window.open('http://m.eonhoresort.co.kr/group/')"
                                     title="연호리조트 단체문의 페이지 이동">
                                     <div class="tit-area">
@@ -349,7 +356,7 @@
                                 </div>
                             </div>
                             <!--//.eonho-->
-                            <div id="deokguSpa" class="group-list resort deokguSpa">
+                            <div id="deokguSpa" class="swiper-slide group-list resort deokguSpa">
                                 <div class="link-area" onclick="window.open('http://m.go.co.kr/home/view/?p_no=G0dz')"
                                     title="덕구온천리조트 예약 페이지 이동">
                                     <div class="tit-area">
@@ -371,7 +378,7 @@
                                 </div>
                             </div>
                             <!--//.deokguSpa-->
-                            <div id="mauna" class="group-list resort mauna">
+                            <div id="mauna" class="swiper-slide group-list resort mauna">
                                 <div class="link-area">
                                     <div class="tit-area">
                                         <div class="type-box clr">
@@ -392,7 +399,7 @@
                                 </div>
                             </div>
                             <!--//.mauna-->
-                            <div id="glory" class="group-list resort glory">
+                            <div id="glory" class="swiper-slide group-list resort glory">
                                 <div class="link-area">
                                     <div class="tit-area">
                                         <div class="type-box clr">
@@ -413,7 +420,7 @@
                                 </div>
                             </div>
                             <!--//.glory-->
-                            <div id="cheongpung" class="group-list resort cheongpung">
+                            <div id="cheongpung" class="swiper-slide group-list resort cheongpung">
                                 <div class="link-area" onclick="window.open('http://m.go.co.kr/home/view/?p_no=HU1y')"
                                     title="청풍리조트 예약 페이지 이동">
                                     <div class="tit-area">
@@ -435,7 +442,7 @@
                                 </div>
                             </div>
                             <!--//.cheongpung-->
-                            <div id="muchangpo" class="group-list resort muchangpo">
+                            <div id="muchangpo" class="swiper-slide group-list resort muchangpo">
                                 <div class="link-area">
                                     <div class="tit-area">
                                         <div class="type-box clr">
@@ -456,7 +463,7 @@
                                 </div>
                             </div>
                             <!--//.muchangpo-->
-                            <div id="namwon" class="group-list resort namwon">
+                            <div id="namwon" class="swiper-slide group-list resort namwon">
                                 <div class="link-area" onclick="window.open('http://m.namwoncondo.kr/group/')"
                                     title="지리산 중앙하이츠 콘도 단체문의 페이지 이동">
                                     <div class="tit-area">
@@ -478,7 +485,7 @@
                                 </div>
                             </div>
                             <!--//.namwon-->
-                            <div id="oceanHill" class="group-list hotel oceanHill">
+                            <div id="oceanHill" class="swiper-slide group-list hotel oceanHill">
                                 <div class="link-area" onclick="window.open('http://www.go.co.kr/home/view/?p_no=Gk1yFG0e')"
                                     title="여수오션힐 호텔 예약 페이지 이동">
                                     <div class="tit-area">
@@ -500,7 +507,7 @@
                                 </div>
                             </div>
                             <!--//.oceanHill-->
-                            <div id="muju" class="group-list resort muju">
+                            <div id="muju" class="swiper-slide group-list resort muju">
                                 <div class="link-area">
                                     <div class="tit-area">
                                         <div class="type-box clr">
@@ -521,7 +528,7 @@
                                 </div>
                             </div>
                             <!--//.muju-->
-                            <div id="yeongjong" class="group-list resort yeongjong">
+                            <div id="yeongjong" class="swiper-slide group-list resort yeongjong">
                                 <div class="link-area" onclick="window.open('http://m.go.co.kr/home/view/?p_no=Gk94G2sS')"
                                     title="영종스카이리조트 예약 페이지 이동">
                                     <div class="tit-area">
@@ -543,7 +550,7 @@
                                 </div>
                             </div>
                             <!--//.yeongjong-->
-                            <div id="pavel" class="group-list hotel pavel">
+                            <div id="pavel" class="swiper-slide group-list hotel pavel">
                                 <div class="link-area" onclick="window.open('http://m.go.co.kr/home/view/?p_no=GEh4Eg==')"
                                     title="빠레브호텔 예약 페이지 이동">
                                     <div class="tit-area">
@@ -566,8 +573,10 @@
                             </div>
                             <!--//.pavel-->
                         </div>
+                        
+                        <div class="page-container"><div class="swiper-pagination"></div></div>
                     </div>
-                    <div class="cf group-container region" id="seoulgg">
+                    <div class="group-container region" id="seoulgg">
                         <div id="ramada" class="group-list hotel ramada">
                             <div class="link-area" onclick="window.open('http://m.ramadapt.co.kr/group/')" 
                                 title="라마다앙코르평택호텔 단체문의 페이지 이동">
@@ -613,7 +622,7 @@
                         </div>
                         <!--//.yeongjong-->
                     </div>
-                    <div class="cf group-container region" id="gangwon">
+                    <div class="group-container region" id="gangwon">
                         <div id="ocean" class="group-list resort ocean">
                             <div class="link-area" onclick="window.open('http://ocean2you.co.kr/group/')"
                                 title="오션투유리조트 단체문의 페이지 이동">
@@ -704,7 +713,7 @@
                         </div>
                         <!--//.eonho-->
                     </div>
-                    <div class="cf group-container region" id="gyeongsang">
+                    <div class="group-container region" id="gyeongsang">
                         <div id="deokguSpa" class="group-list resort deokguSpa">
                             <div class="link-area" onclick="window.open('http://m.go.co.kr/home/view/?p_no=G0dz')"
                                 title="덕구온천리조트 예약 페이지 이동">
@@ -770,7 +779,7 @@
                         </div>
                         <!--//.glory-->
                     </div>
-                    <div class="cf group-container region" id="chungcheong">
+                    <div class="group-container region" id="chungcheong">
                         <div id="cheongpung" class="group-list resort cheongpung">
                             <div class="link-area" onclick="window.open('http://m.go.co.kr/home/view/?p_no=HU1y')"
                                 title="청풍리조트 예약 페이지 이동">
@@ -815,7 +824,7 @@
                         </div>
                         <!--//.muchangpo-->
                     </div>
-                    <div class="cf group-container region" id="jeolla">
+                    <div class="group-container region" id="jeolla">
                         <div id="namwon" class="group-list resort namwon">
                             <div class="link-area" onclick="window.open('http://m.namwoncondo.kr/group/')"
                                 title="지리산 중앙하이츠 콘도 단체문의 페이지 이동">
@@ -882,7 +891,7 @@
                         </div>
                         <!--//.muju-->
                     </div>
-                    <div class="cf group-container region" id="jeju">
+                    <div class="group-container region" id="jeju">
                         <div id="pavel" class="group-list hotel pavel">
                             <div class="link-area" onclick="window.open('http://m.go.co.kr/home/view/?p_no=GEh4Eg==')"
                                 title="빠레브호텔 예약 페이지 이동">
