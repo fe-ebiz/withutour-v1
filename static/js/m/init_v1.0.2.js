@@ -1,9 +1,8 @@
 $(function(){
-    console.log($('#gangwon').offset().top);
     //함수 실행
     // regionProduct();
     // tListFn();
-    // conFn();
+    conFn();
 
     //리사이즈
     // $(window).resize(function() {
@@ -86,14 +85,11 @@ function conFn(){
         // $(this).parents('li').addClass('on').siblings().removeClass('on');
         // sec.addClass('on').siblings('.group-container').removeClass('on');
         // sec.stop().show().siblings('.group-list').stop().hide();
-        console.log(sec);
-        console.log(sec.offset().top);
-        console.log( $('#home').offset().top );
-        console.log( $('#gangwon').offset().top );
-        console.log( $('#jeju').offset().top );
+        
         $("html, body").stop().animate({
-            scrollTop : $('#home').offset().top
+            scrollTop : sec.offset().top - (navH + parseInt($('.group').css('padding-top')) )
         }, 500);
+
         // tListFn();
 
         return false;

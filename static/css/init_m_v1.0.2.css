@@ -14,6 +14,7 @@ body {font-family: 'Nanum Square', 'Nanum Gothic', 'Malgun Gothic', sans-serif; 
     content: '';
     display: table;
 }
+.cf,
 .cf:after {
     clear: both;
 }
@@ -80,7 +81,7 @@ figure img, .img-list img {position: relative; box-sizing: border-box; width: 10
 .header .menu .menu-txt-area .menu-list li {float: left; box-sizing: border-box; width: 31.8%; margin: 0 0 2.3% 2.3%;}
 .header .menu .menu-txt-area .menu-list li:first-child, .header .menu .menu-txt-area .menu-list li:nth-child(3n+1) {margin-left: 0;}
 .header .menu .menu-txt-area .menu-list li a {position: relative; display: block; text-align: center;}
-.header .menu .menu-txt-area .menu-list li a span, .header .menu .menu-txt-area .menu-list li a p {display: block; font-size: 12px; line-height: 16px;}
+.header .menu .menu-txt-area .menu-list li a span, .header .menu .menu-txt-area .menu-list li a p {display: block; font-size: 11px; line-height: 16px;}
 .header .menu .menu-txt-area .menu-list li a .menu-sub-txt {margin-top: 6px; color: #a20fbe;}
 .header .menu .menu-txt-area .menu-list li a .menu-txt {color: #000;}
 .header .menu .btn-close {position: absolute; display: block; width: 17px; height: 17px; top: 14px; right: 12px;}
@@ -109,7 +110,7 @@ figure img, .img-list img {position: relative; box-sizing: border-box; width: 10
 .visual .btn-ft.type-2 {width: 140px}
 .visual .btn-ft.type-2 .ic-rArrow:after {top: 0; right: -2px; border-color: #fff;}
 /* group */
-.group {position: relative; margin-top: 50px; padding: 22px 0px 20px; background: #fff;}
+.group {position: relative; margin-top: 50px; padding: 20px 0; background: #fff;}
 /* swiper 영역 */
 .group .group-container {display: none;}
 .group .group-container.off {display: none;}
@@ -131,12 +132,12 @@ figure img, .img-list img {position: relative; box-sizing: border-box; width: 10
     padding: 0 5px;
 }
 .group .group-list-wrapper .group-list {
-  position: relative;
-  float: left;
-  width: 50%;
-  box-sizing: border-box;
-  padding: 0 5px;
-  padding-bottom: 20px;
+    position: relative;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 5px;
+    padding-bottom: 20px;
 }
 /* .group .group-list-wrapper .group-list:not(:first-child):not(:nth-child(2)) {
   padding-top: 20px;
@@ -144,21 +145,22 @@ figure img, .img-list img {position: relative; box-sizing: border-box; width: 10
 /* 타이틀 영역 */
 .group .group-list .link-area {cursor: pointer;}
 .group .group-list .tit-area {position: relative; box-sizing: border-box; width: 100%;}
-.group .group-list .tit-area .type-box {position: relative; box-sizing: border-box; width: 100%; height: 34px;}
-.group .group-list .tit-area .type-box span {position: relative; display: block; box-sizing: border-box; line-height: 34px;}
-.group .group-list .tit-area .type-box .type-adr {padding-left: 5px; font-size: 13px; font-weight: 700; color: #fff;}
-.group .group-list .tit-area .type-box .type-stay {position: absolute; width: 39.5%; top: 0; right: 0; padding-right: 5px; font-size: 13px; text-align: right; background: #000;}
-.group .group-list .tit-area .type-box .type-stay:before {content: ''; display: block; position: absolute; width: 0px; height: 0px; top: 0; margin-left: -34px; border-left: 34px solid transparent; border-bottom: 34px solid #000;}
-.group .group-list .tit-area .tit-box {text-align: center;}
-.group .group-list .tit-area .tit-box .tit {padding: 13px 0 3px; display: block; font-size: 17px; font-weight: 700; line-height: 34px; letter-spacing: -1px;}
-.group .group-list .tit-area .tit-box .sub-tit {display: block; font-size: 15px; line-height: 30px; letter-spacing: -1px;}
+.group .group-list .tit-area .type-box {position: relative; box-sizing: border-box; width: 100%; height: 28px;}
+.group .group-list .tit-area .type-box > span {position: relative; display: block; box-sizing: border-box; line-height: 28px;}
+.group .group-list .tit-area .type-box .type-adr {padding-left: 5px; font-size: 12px; font-weight: 700; color: #fff;}
+.group .group-list .tit-area .type-box .type-stay {position: absolute; width: 45%; top: 0; right: 0; padding-right: 5px; font-size: 11px; text-align: right; background: #000;}
+.group .group-list.hotel .tit-area .type-box .type-stay {width: 35%;}
+.group .group-list .tit-area .type-box .type-stay:before {content: ''; display: block; position: absolute; width: 0px; height: 0px; top: 0; margin-left: -28px; border-left: 28px solid transparent; border-bottom: 28px solid #000;}
+.group .group-list .tit-area .tit-box {text-align: center; line-height: 1.428;}
+.group .group-list .tit-area .tit-box .tit {display: block; margin-top: 5px; font-size: 16px; font-weight: 700; letter-spacing: -1px;}
+.group .group-list .tit-area .tit-box .sub-tit {display: block; font-size: 12px; letter-spacing: -1px;}
 /* 소개텍스트 영역 */
 .group .group-list .txt-area {}
-.group .group-list .txt-area .img-type {padding: 10px 0 18px;}
+.group .group-list .txt-area .img-type {padding: 5px 0;}
 .group .group-list .txt-area .img-type img {border-color: #bababa;}
 /*.group .group-list .txt-area .img-type + .p-1.c-red {padding-top: 0;}*/
 .group .group-list .txt-area .img-map {margin-bottom: 23px;} 
-.group .group-list .txt-area p {font-size: 14px; line-height: 24px; text-align: center; word-break: keep-all;}
+.group .group-list .txt-area p {font-size: 11px; text-align: center; word-break: keep-all; letter-spacing: -1px; margin-top: 5px;}
 .group .group-list .txt-area .p-1 {/*padding: 23px 0 14px;*/}
 .group .group-list .txt-area .p-2 {padding: 11px 0 10px;}
 .group .group-list .txt-area .img-list {position: relative;}
@@ -310,11 +312,13 @@ figure img, .img-list img {position: relative; box-sizing: border-box; width: 10
 
 
 @media (max-device-width: 320px){ 
+    .hidden-xxs {display: none;}
     /* visual */
     .visual {padding-left: 22px; padding-right: 22px;}
     .visual .cust-txt {padding: 0 12px;}
     /* group */
-    .group .group-list .tit-area .type-box .type-adr {font-size: 18px;}
+    .group .group-list .tit-area .type-box .type-stay .type-en {display: none;}
+    /* .group .group-list .tit-area .type-box .type-adr {font-size: 18px;}
     .group .group-list .tit-area .type-box .type-stay {font-size: 14px;}
     .group .group-list .tit-area .tit-box .tit {font-size: 30px; line-height: 30px;}
     .group .group-list .tit-area .tit-box .sub-tit {font-size: 18px; line-height: 26px;}
@@ -323,7 +327,7 @@ figure img, .img-list img {position: relative; box-sizing: border-box; width: 10
     .group .group-list .txt-area .txt-list-box .txt-list-tit {padding: 9px 0 8px; font-size: 18px; line-height: 24px;}
     .group .group-list .txt-area .txt-list-box .txt-list li {font-size: 16px; line-height: 24px;}
 
-    .group .group-list .btn-detail span {font-size: 16px;}
+    .group .group-list .btn-detail span {font-size: 16px;} */
     
     
     .sec-sub-tit {font-size: 14px;}
