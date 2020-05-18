@@ -16,7 +16,7 @@ img/
 *.otf
 
 #sftpFile, zipÆÄÀÏ
-*.json
+# *.json
 *.zip
 
 # ImeageFile
