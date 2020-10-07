@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>체예약 통합홍보사이트</title>
+	<title>단체예약 통합홍보사이트</title>
 	<!-- load fonts first -->
 	<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
@@ -352,7 +352,7 @@
 							</div>
 							<!--//.eonho-->
 							<div id="seoulgg" class="group-click-go"></div>
-							<div id="yeongjong" class="group-list resort yeongjong">
+							<!-- <div id="yeongjong" class="group-list resort yeongjong">
 								<div class="link-area" onclick="window.open('http://m.go.co.kr/home/view/?p_no=Gk94G2sS')" title="영종스카이리조트 예약 페이지 이동">
 									<div class="tit-area">
 										<div class="type-box clr">
@@ -370,7 +370,7 @@
 										<p class="p-1 c-red">※ 총 201개 객실</p>
 									</div>
 								</div>
-							</div>
+							</div> -->
 							<!--//.yeongjong-->
 							<div id="chungcheong" class="group-click-go"></div>
 							<div id="bscondo" class="group-list resort bscondo">

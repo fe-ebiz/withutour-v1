@@ -21,7 +21,7 @@ $group_arr[$i]["room2"] = "475개 객실 (1,200명 동시 이용)";
 $group_arr[$i]["default"] = array("화장실", "냉장고", "에어컨", "LED TV ", "어메니티", "Wi-Fi", "금고 등");
 $group_arr[$i]["facil"] = array("레스토랑", "세미나툼 ", "컨퍼런스룸", "비즈니스센터", "편의점 등");
 $group_arr[$i]["around"] = array("을왕리해변", "무의도", "차이나타운", "구읍배터", "용궁사", "영종도 하늘공원", "영종역사관", "월미테마파크", "마시안해변 등");
-// $group_arr[$i]["program"] = array("워터파크", "온천,스파체험", "테마파크", "레크레이션", "산행, 트레킹", "레일바이크", "즐거운 체험관광", "풍부한 주변관광");
+$group_arr[$i]["program"] = array();
 $group_arr[$i]["group"] = "컨퍼런스 룸 : 120석";
 
 
@@ -308,21 +308,21 @@ switch(S_FLAG) {
 		$group_arr[$i]["around"] = array("반디랜드", "적상산", "머루와인동굴", "칠연폭포", "덕유산", "'각시탈'드라마촬영지", "세솔동 야외노천탕 등");
 		$group_arr[$i]["group"] = "세미나실 / 컨퍼런스홀";
 
-		$i++;
-		$group_arr[$i]["type"] = "resort";
-		$group_arr[$i]["name"] = "yeongjong";
-		$group_arr[$i]["link"] = "http://www.go.co.kr/home/view/?p_no=Gk94G2sS";
-		$group_arr[$i]["addr"] = "인천 중구";
-		$group_arr[$i]["comp"] = "영종스카이리조트";
-		$group_arr[$i]["addr2"] = "인천광역시 중구 용유서로 379번지";
-		$group_arr[$i]["addr3"] = "인천";
-		$group_arr[$i]["scale"] = "16평, 31평, 32평, 35평, 37평, 48평, 70평, 98평, 116평형";
-		$group_arr[$i]["area"] = "인천, 영종, 강화, 김포, 부천, 안산";
-		$group_arr[$i]["room2"] = "201개 객실";
-		$group_arr[$i]["default"] = array("인터넷", "냉·난방 시스템", "LCD TV", "슬리퍼", "전자렌지", "주방기기 등");
-		$group_arr[$i]["facil"] = array("스낵바", "헬스장", "사우나", "골든스파&워터파크", "노래방");
-		$group_arr[$i]["around"] = array("을왕리 선착장", "을왕리해변", "왕산해수욕장", "선녀바위", "인천국제공항", "용엄사", "조름섬", "오성산", "용유역 등");
-		$group_arr[$i]["group"] = "대연회장, 소연회장, 세미나실";
+		// $i++;
+		// $group_arr[$i]["type"] = "resort";
+		// $group_arr[$i]["name"] = "yeongjong";
+		// $group_arr[$i]["link"] = "http://www.go.co.kr/home/view/?p_no=Gk94G2sS";
+		// $group_arr[$i]["addr"] = "인천 중구";
+		// $group_arr[$i]["comp"] = "영종스카이리조트";
+		// $group_arr[$i]["addr2"] = "인천광역시 중구 용유서로 379번지";
+		// $group_arr[$i]["addr3"] = "인천";
+		// $group_arr[$i]["scale"] = "16평, 31평, 32평, 35평, 37평, 48평, 70평, 98평, 116평형";
+		// $group_arr[$i]["area"] = "인천, 영종, 강화, 김포, 부천, 안산";
+		// $group_arr[$i]["room2"] = "201개 객실";
+		// $group_arr[$i]["default"] = array("인터넷", "냉·난방 시스템", "LCD TV", "슬리퍼", "전자렌지", "주방기기 등");
+		// $group_arr[$i]["facil"] = array("스낵바", "헬스장", "사우나", "골든스파&워터파크", "노래방");
+		// $group_arr[$i]["around"] = array("을왕리 선착장", "을왕리해변", "왕산해수욕장", "선녀바위", "인천국제공항", "용엄사", "조름섬", "오성산", "용유역 등");
+		// $group_arr[$i]["group"] = "대연회장, 소연회장, 세미나실";
 
 		$i++;
 		$group_arr[$i]["type"] = "hotel";
